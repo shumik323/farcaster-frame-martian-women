@@ -7,6 +7,7 @@ const frameMetadata = getFrameMetadata({
       label: "get to know me."
     }
   ],
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmXNWyv5kA1w27xU7EQhAcazW8ivFjouEm7B3k4K92AMaZ/0.png`,
   input: {
     text: 'Tell me a boat story',
   },
