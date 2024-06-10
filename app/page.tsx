@@ -4,19 +4,20 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Begin"
+      label: "get to know me."
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmXNWyv5kA1w27xU7EQhAcazW8ivFjouEm7B3k4K92AMaZ/0.png`,
+  // image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmXNWyv5kA1w27xU7EQhAcazW8ivFjouEm7B3k4K92AMaZ/0.png`,
+  state: 'text example',
   postUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
-  title: 'Martians Women',
-  description: 'A frame telling the story of Martian Women',
+  title: 'My greeting',
+  description: 'A little backstory for the farcaster community.',
   openGraph: {
-    title: 'Martian Women',
-    description: 'A frame telling the story of Martian Women',
+    title: 'My greeting',
+    description: 'A little backstory for the farcaster community.',
     images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmXNWyv5kA1w27xU7EQhAcazW8ivFjouEm7B3k4K92AMaZ/0.png`],
   },
   other: {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Martian Women</h1>
+      <h1>shumik.</h1>
     </>
   );
 }
